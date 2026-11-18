@@ -1,0 +1,117 @@
+<section class="page-head">
+  <p class="kicker">Corpus de veille</p>
+  <h1>Signaux collectés</h1>
+  <p>{{count}} contenu(s). Chaque fiche renvoie vers le document original.</p>
+</section>
+<form class="filters" method="get" action="/veille">
+  <div class="filters-row">
+    <div class="field field-grow">
+      <label for="q">Recherche</label>
+      <span class="control"><svg class="icon"><use href="#i-search"></use></svg><input id="q" name="q" type="search" value="" placeholder="lingala, corpus, voix…"></span>
+    </div>
+    <div class="field">
+      <span class="field-label" id="source-label">Source</span>
+      <details class="dropdown" id="source-menu">
+        <summary aria-labelledby="source-label">
+          <svg class="icon"><use href="#i-layers"></use></svg>
+          <span class="dropdown-value">Toutes</span>
+          <span class="dropdown-chevron"><svg class="icon"><use href="#i-chevron"></use></svg></span>
+        </summary>
+        <div class="dropdown-menu" role="listbox" aria-labelledby="source-label">
+          <label><input type="radio" name="source" value="" checked><span>Toutes</span></label>
+          <label><input type="radio" name="source" value="Hugging Face"><span>Hugging Face</span></label>
+          <label><input type="radio" name="source" value="arXiv"><span>arXiv</span></label>
+          <label><input type="radio" name="source" value="GitHub"><span>GitHub</span></label>
+          <label><input type="radio" name="source" value="Wikipédia"><span>Wikipédia</span></label>
+        </div>
+      </details>
+    </div>
+    <div class="field">
+      <span class="field-label" id="theme-label">Thème</span>
+      <details class="dropdown" id="theme-menu">
+        <summary aria-labelledby="theme-label">
+          <svg class="icon"><use href="#i-sheets"></use></svg>
+          <span class="dropdown-value">Tous</span>
+          <span class="dropdown-chevron"><svg class="icon"><use href="#i-chevron"></use></svg></span>
+        </summary>
+        <div class="dropdown-menu" role="listbox" aria-labelledby="theme-label">
+          <label><input type="radio" name="theme" value="" checked><span>Tous</span></label>
+          <label><input type="radio" name="theme" value="Traduction automatique"><span>Traduction automatique</span></label>
+          <label><input type="radio" name="theme" value="Reconnaissance vocale"><span>Reconnaissance vocale</span></label>
+          <label><input type="radio" name="theme" value="Synthèse vocale"><span>Synthèse vocale</span></label>
+          <label><input type="radio" name="theme" value="Modèles de langue"><span>Modèles de langue</span></label>
+          <label><input type="radio" name="theme" value="Jeux de données"><span>Jeux de données</span></label>
+          <label><input type="radio" name="theme" value="Ressources ouvertes"><span>Ressources ouvertes</span></label>
+        </div>
+      </details>
+    </div>
+    <div class="field">
+      <span class="field-label" id="langue-label">Langue</span>
+      <details class="dropdown" id="langue-menu">
+        <summary aria-labelledby="langue-label">
+          <svg class="icon"><use href="#i-translate"></use></svg>
+          <span class="dropdown-value">Toutes</span>
+          <span class="dropdown-chevron"><svg class="icon"><use href="#i-chevron"></use></svg></span>
+        </summary>
+        <div class="dropdown-menu" role="listbox" aria-labelledby="langue-label">
+          <label><input type="radio" name="langue" value="" checked><span>Toutes</span></label>
+          <label><input type="radio" name="langue" value="Lingala"><span>Lingala</span></label>
+          <label><input type="radio" name="langue" value="Swahili"><span>Swahili</span></label>
+          <label><input type="radio" name="langue" value="Tshiluba"><span>Tshiluba</span></label>
+          <label><input type="radio" name="langue" value="Kikongo"><span>Kikongo</span></label>
+          <label><input type="radio" name="langue" value="Plusieurs"><span>Plusieurs</span></label>
+        </div>
+      </details>
+    </div>
+    <button class="button" type="submit"><svg class="icon"><use href="#i-search"></use></svg><span>Filtrer</span></button>
+  </div>
+  <div class="filters-row filters-dates">
+    <div class="field">
+      <span class="field-label" id="du-label">Depuis</span>
+      <div class="date-picker" data-date="du">
+        <button class="date-button" type="button" aria-haspopup="dialog" aria-expanded="false" aria-labelledby="du-label">
+          <svg class="icon"><use href="#i-calendar"></use></svg>
+          <span class="date-value">Choisir</span>
+          <span class="dropdown-chevron"><svg class="icon"><use href="#i-chevron"></use></svg></span>
+        </button>
+        <div class="date-panel" role="dialog" aria-label="Date de début" hidden>
+          <div class="date-nav">
+            <button type="button" data-shift="-1" aria-label="Mois précédent">‹</button>
+            <strong data-month-label></strong>
+            <button type="button" data-shift="1" aria-label="Mois suivant">›</button>
+          </div>
+          <div class="date-week" aria-hidden="true"><span>lu</span><span>ma</span><span>me</span><span>je</span><span>ve</span><span>sa</span><span>di</span></div>
+          <div class="date-grid"></div>
+          <button class="date-clear" type="button" data-clear>Effacer</button>
+        </div>
+        <input type="hidden" name="du" value="">
+      </div>
+    </div>
+    <div class="field">
+      <span class="field-label" id="au-label">Jusqu’au</span>
+      <div class="date-picker" data-date="au">
+        <button class="date-button" type="button" aria-haspopup="dialog" aria-expanded="false" aria-labelledby="au-label">
+          <svg class="icon"><use href="#i-calendar"></use></svg>
+          <span class="date-value">Choisir</span>
+          <span class="dropdown-chevron"><svg class="icon"><use href="#i-chevron"></use></svg></span>
+        </button>
+        <div class="date-panel" role="dialog" aria-label="Date de fin" hidden>
+          <div class="date-nav">
+            <button type="button" data-shift="-1" aria-label="Mois précédent">‹</button>
+            <strong data-month-label></strong>
+            <button type="button" data-shift="1" aria-label="Mois suivant">›</button>
+          </div>
+          <div class="date-week" aria-hidden="true"><span>lu</span><span>ma</span><span>me</span><span>je</span><span>ve</span><span>sa</span><span>di</span></div>
+          <div class="date-grid"></div>
+          <button class="date-clear" type="button" data-clear>Effacer</button>
+        </div>
+        <input type="hidden" name="au" value="">
+      </div>
+    </div>
+  </div>
+</form>
+<script type="application/json" id="page-state">{{state}}</script>
+{{cards}}
+<nav class="pager" aria-label="Pagination">
+  {{pager}}
+</nav>

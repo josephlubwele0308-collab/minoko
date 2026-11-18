@@ -1,0 +1,46 @@
+<section class="hero">
+  <div class="hero-copy">
+    <p class="index-label">RDC · quatre langues nationales</p>
+    <h1>Ce que le numérique sait déjà dire dans nos langues.</h1>
+    <p class="lede">Modèles, corpus, dépôts et articles pour le lingala, le swahili, le tshiluba et le kikongo.</p>
+    <p class="hero-actions">
+      <a class="button" href="/veille"><svg class="icon"><use href="#i-sheets"></use></svg><span>Ouvrir la veille</span></a>
+      <a class="button button-ghost" href="/tableau-de-bord"><svg class="icon"><use href="#i-chart"></use></svg><span>Lire les comptes</span></a>
+    </p>
+  </div>
+  <dl class="stats">
+    <div><dt><svg class="icon"><use href="#i-sheets"></use></svg> Contenus</dt><dd>{{total}}</dd></div>
+    <div><dt><svg class="icon"><use href="#i-layers"></use></svg> Sources</dt><dd>4</dd></div>
+    <div><dt><svg class="icon"><use href="#i-translate"></use></svg> Langues</dt><dd>4</dd></div>
+  </dl>
+</section>
+<section class="section">
+  <div class="section-head">
+    <h2>Terrains</h2>
+    <a href="/a-propos"><svg class="icon"><use href="#i-info"></use></svg><span>Note d’intention</span></a>
+  </div>
+  <ul class="lang-grid">
+    <li><a class="lang-ln" href="/veille?langue=Lingala"><b>LN</b><strong>Lingala</strong><span>Kinshasa, fleuve, nord-ouest</span></a></li>
+    <li><a class="lang-sw" href="/veille?langue=Swahili"><b>SW</b><strong>Swahili</strong><span>Katanga, Kivu, est du pays</span></a></li>
+    <li><a class="lang-ts" href="/veille?langue=Tshiluba"><b>TS</b><strong>Tshiluba</strong><span>Kasaï</span></a></li>
+    <li><a class="lang-kk" href="/veille?langue=Kikongo"><b>KK</b><strong>Kikongo</strong><span>Kongo Central et kituba</span></a></li>
+  </ul>
+</section>
+<section class="section">
+  <div class="section-head">
+    <h2>Derniers signaux</h2>
+    <a href="/veille"><svg class="icon"><use href="#i-arrow"></use></svg><span>Toute la veille</span></a>
+  </div>
+  {{pending}}
+  <div class="home-grid">
+    {{featured}}
+    <div class="stack">{{latest}}</div>
+  </div>
+</section>
+<section class="section">
+  <div class="section-head">
+    <h2>Activité des Wikipédias</h2>
+    <a href="/veille?source=Wikipédia"><svg class="icon"><use href="#i-book"></use></svg><span>Éditions suivies</span></a>
+  </div>
+  <div class="grid">{{wiki}}</div>
+</section>

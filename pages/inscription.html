@@ -1,0 +1,39 @@
+<section class="auth-shell">
+  <aside class="auth-aside">
+    <p class="kicker">Nouveau compte</p>
+    <h1>Garder une sélection, sans confier le mot de passe en clair.</h1>
+    <ul>
+      <li>Le compte sert uniquement à vos favoris.</li>
+      <li>L’empreinte du mot de passe reste dans la base locale.</li>
+      <li>Huit caractères minimum.</li>
+    </ul>
+  </aside>
+  <div class="auth-card">
+    <h2>Créer un compte</h2>
+    <p>Indiquez comment vous souhaitez apparaître sur vos favoris.</p>
+    {{hint}}
+    {{error}}
+    <form method="post" action="/inscription">
+      <input type="hidden" name="_csrf" value="{{csrf}}">
+      <input type="hidden" name="next" value="{{next}}">
+      <div class="field">
+        <label for="name">Nom</label>
+        <input id="name" name="name" required minlength="2" maxlength="80" autocomplete="name" value="{{name}}"{{invalid}}>
+      </div>
+      <div class="field">
+        <label for="email">Adresse e-mail</label>
+        <input id="email" name="email" type="email" inputmode="email" required maxlength="120" autocomplete="email" spellcheck="false" value="{{email}}"{{invalid}}>
+      </div>
+      <div class="field">
+        <label for="password">Mot de passe</label>
+        <div class="password-line">
+          <input id="password" name="password" type="password" required minlength="8" maxlength="80" autocomplete="new-password"{{invalid}}>
+          <button class="text-toggle" type="button" data-toggle-password aria-controls="password" aria-pressed="false"><svg class="icon"><use href="#i-eye"></use></svg><span>Afficher</span></button>
+        </div>
+        <p class="note" id="password-hint">Huit caractères minimum.</p>
+      </div>
+      <button class="button" type="submit"><svg class="icon"><use href="#i-bookmark"></use></svg><span>Créer le compte</span></button>
+    </form>
+    <p class="switch">Déjà inscrit ? <a href="/connexion?next={{next_query}}">Se connecter</a></p>
+  </div>
+</section>

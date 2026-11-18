@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{title}} · Minoko</title>
+  <meta name="description" content="Minoko suit les modèles, jeux de données, dépôts et articles consacrés au lingala, au swahili, au tshiluba et au kikongo.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" class="sprite" aria-hidden="true">
+    <symbol id="i-home" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" d="M4 11 L12 4 L20 11"/><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" d="M7 10 V20 H17 V10"/></symbol>
+    <symbol id="i-sheets" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" d="M8 3 H18 V19 H8 Z"/><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" d="M5 6 H8 M5 10 H8 M5 14 H8 M5 18 H8"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" d="M4 19 H20"/><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" d="M7 19 V11 H10 V19 M12 19 V6 H15 V19 M17 19 V9"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" cx="12" cy="12" r="8"/><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" d="M12 11 V16 M12 8 H12.1"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" d="M12 3 L22 20 H2 Z"/><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" d="M12 9 V14 M12 17 H12.1"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" d="M5 12 L10 17 L19 7"/></symbol>
+    <symbol id="i-bookmark" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" d="M7 3 H17 V21 L12 17 L7 21 Z"/></symbol>
+    <symbol id="i-out" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" d="M10 4 H5 V20 H10"/><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" d="M10 12 H20 M16 8 L20 12 L16 16"/></symbol>
+    <symbol id="i-key" viewBox="0 0 24 24"><circle fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" cx="8" cy="12" r="3"/><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" d="M11 12 H20 L18 14 M18 12 L16 14"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" cx="11" cy="11" r="6"/><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" d="M16 16 L21 21"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" d="M2 12 C5 7 8 5 12 5 C16 5 19 7 22 12 C19 17 16 19 12 19 C8 19 5 17 2 12 Z"/><circle fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" cx="12" cy="12" r="2.4"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" d="M6 9 L12 15 L18 9"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" d="M4 12 H20 M14 6 L20 12 L14 18"/></symbol>
+    <symbol id="i-mic" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" d="M9 4 H15 V12 A3 3 0 0 1 9 12 Z"/><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" d="M6 11 A6 6 0 0 0 18 11 M12 17 V21 M9 21 H15"/></symbol>
+    <symbol id="i-speak" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" d="M4 9 H8 L13 5 V19 L8 15 H4 Z"/><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" d="M16 9 A4 4 0 0 1 16 15 M18 6 A8 8 0 0 1 18 18"/></symbol>
+    <symbol id="i-translate" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" d="M4 5 H12 M8 5 C8 10 5 13 3 14"/><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" d="M5 9 C7 11 9 12 12 13"/><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" d="M14 19 L17 10 L20 19 M15 16 H19"/></symbol>
+    <symbol id="i-database" viewBox="0 0 24 24"><ellipse fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" cx="12" cy="7" rx="7" ry="3"/><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" d="M5 7 V17 C5 18.7 8.1 20 12 20 C15.9 20 19 18.7 19 17 V7"/><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" d="M5 12 C5 13.7 8.1 15 12 15 C15.9 15 19 13.7 19 12"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" d="M12 3 L21 8 L12 13 L3 8 Z"/><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" d="M3 12 L12 17 L21 12"/><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" d="M3 16 L12 21 L21 16"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" d="M4 5 H10 A3 3 0 0 1 13 8 V20 H7 A3 3 0 0 0 4 20 Z"/><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" d="M20 5 H14 A3 3 0 0 0 11 8 V20 H17 A3 3 0 0 1 20 20 Z"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" d="M9 7 L4 12 L9 17 M15 7 L20 12 L15 17"/></symbol>
+    <symbol id="i-paper" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" d="M6 3 H14 L20 9 V21 H6 Z"/><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" d="M14 3 V9 H20"/></symbol>
+    <symbol id="i-mask" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" d="M4 11 C6 6 18 6 20 11 C20 17 16 20 12 20 C8 20 4 17 4 11 Z"/><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" d="M9 12 H9.1 M15 12 H15.1 M9 15 C10 16 14 16 15 15"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" d="M4 5 H20 V20 H4 Z"/><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" d="M4 10 H20 M8 3 V7 M16 3 V7"/></symbol>
+  </svg>
+  <a class="skip" href="#contenu">Aller au contenu</a>
+  <header class="site-header">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">M</span>
+      <span>
+        <strong>Minoko</strong>
+        <small>Journal des langues</small>
+      </span>
+    </a>
+    <nav class="site-nav" aria-label="Navigation principale">
+      <a href="/"{{current_accueil}}><svg class="icon"><use href="#i-home"></use></svg><span>Accueil</span></a>
+      <a href="/veille"{{current_veille}}><svg class="icon"><use href="#i-sheets"></use></svg><span>Veille</span></a>
+      <a href="/tableau-de-bord"{{current_dashboard}}><svg class="icon"><use href="#i-chart"></use></svg><span>Tableau</span></a>
+      <a href="/a-propos"{{current_apropos}}><svg class="icon"><use href="#i-info"></use></svg><span>À propos</span></a>
+      {{account}}
+    </nav>
+  </header>
+  {{flash}}
+  <main id="contenu">
+    {{main}}
+  </main>
+  <footer class="site-footer">
+    <p><strong>Minoko</strong> — veille technologique sur les langues congolaises.</p>
+    <p>LUBWELE KABUNDI Joseph · Master 2 Communication Numérique · Université Don Bosco de Lubumbashi · 2026-2027</p>
+  </footer>
+  <template id="skeleton-cards">
+    <div class="grid skeleton-grid" role="status" aria-busy="true" aria-label="Chargement des contenus">
+      <article class="slip skeleton" aria-hidden="true"><div class="slip-lang"><div class="bone bone-tag"></div></div><h3><div class="bone bone-title"></div></h3><div class="bone"></div><div class="bone"></div><div class="bone bone-short"></div><div class="meta"><span class="bone bone-meta"></span></div></article>
+      <article class="slip skeleton" aria-hidden="true"><div class="slip-lang"><div class="bone bone-tag"></div></div><h3><div class="bone bone-title"></div></h3><div class="bone"></div><div class="bone"></div><div class="bone bone-short"></div><div class="meta"><span class="bone bone-meta"></span></div></article>
+      <article class="slip skeleton" aria-hidden="true"><div class="slip-lang"><div class="bone bone-tag"></div></div><h3><div class="bone bone-title"></div></h3><div class="bone"></div><div class="bone"></div><div class="bone bone-short"></div><div class="meta"><span class="bone bone-meta"></span></div></article>
+      <article class="slip skeleton" aria-hidden="true"><div class="slip-lang"><div class="bone bone-tag"></div></div><h3><div class="bone bone-title"></div></h3><div class="bone"></div><div class="bone"></div><div class="bone bone-short"></div><div class="meta"><span class="bone bone-meta"></span></div></article>
+      <article class="slip skeleton" aria-hidden="true"><div class="slip-lang"><div class="bone bone-tag"></div></div><h3><div class="bone bone-title"></div></h3><div class="bone"></div><div class="bone"></div><div class="bone bone-short"></div><div class="meta"><span class="bone bone-meta"></span></div></article>
+      <article class="slip skeleton" aria-hidden="true"><div class="slip-lang"><div class="bone bone-tag"></div></div><h3><div class="bone bone-title"></div></h3><div class="bone"></div><div class="bone"></div><div class="bone bone-short"></div><div class="meta"><span class="bone bone-meta"></span></div></article>
+    </div>
+  </template>
+  {{scripts}}
+</body>
+</html>

@@ -1,0 +1,50 @@
+<section class="page-head">
+  <p class="kicker">Indicateurs</p>
+  <h1>Où se concentrent les outils</h1>
+  <p>Ces chiffres décrivent l’échantillon collecté automatiquement, pas un recensement exhaustif.</p>
+  {{run}}
+  {{alerts}}
+  {{empty_state}}
+</section>
+<div class="dash-grid">
+  <section class="panel">
+    <h2><svg class="icon"><use href="#i-layers"></use></svg> Volume par source</h2>
+    <canvas id="chart-sources" role="img" aria-label="Graphique du nombre de contenus par source"></canvas>
+    <div class="table-wrap">
+      <table>
+        <caption>Nombre de contenus par source</caption>
+        <thead><tr><th scope="col">Source</th><th scope="col">Contenus</th></tr></thead>
+        <tbody>{{source_rows}}</tbody>
+      </table>
+    </div>
+  </section>
+  <section class="panel">
+    <h2><svg class="icon"><use href="#i-sheets"></use></svg> Volume par thème</h2>
+    <canvas id="chart-themes" role="img" aria-label="Graphique du nombre de contenus par thème"></canvas>
+    <div class="table-wrap">
+      <table>
+        <caption>Nombre de contenus par thème</caption>
+        <thead><tr><th scope="col">Thème</th><th scope="col">Contenus</th></tr></thead>
+        <tbody>{{theme_rows}}</tbody>
+      </table>
+    </div>
+  </section>
+</div>
+<div class="dash-grid">
+  <section class="panel">
+    <h2><svg class="icon"><use href="#i-translate"></use></svg> Volume par langue</h2>
+    <div class="table-wrap">
+      <table>
+        <caption>Nombre de contenus par langue</caption>
+        <thead><tr><th scope="col">Langue</th><th scope="col">Contenus</th></tr></thead>
+        <tbody>{{language_rows}}</tbody>
+      </table>
+    </div>
+    <p class="note">Le swahili des outils publics est surtout le swahili standard d’Afrique de l’Est. Le swahili congolais, le tshiluba et le kikongo restent sous-représentés : c’est un résultat, pas un choix d’affichage.</p>
+  </section>
+  <section class="panel">
+    <h2><svg class="icon"><use href="#i-search"></use></svg> Mots fréquents dans les titres</h2>
+    {{keywords}}
+  </section>
+</div>
+<script id="chart-data" type="application/json">{{chart_json}}</script>
