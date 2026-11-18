@@ -4,7 +4,9 @@
   <h1>{{title_html}}</h1>
   {{meta}}
   <p class="meta">Publié le {{published}} · collecté le {{collected}}</p>
-  <p class="summary">{{summary}}</p>
+  <div class="detail-body">
+    {{body}}
+  </div>
   <div class="detail-actions">
     <a class="button" href="{{url}}" rel="noopener noreferrer"><svg class="icon"><use href="#i-arrow"></use></svg><span>Ouvrir la source originale</span></a>
     {{favorite}}
